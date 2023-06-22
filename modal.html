@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <!-- BootStrap CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="../CSS/Home_Style.css">
+
+    <!-- Bootstrap Icon  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- FontAwesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Modal Styling  -->
+    <link rel="stylesheet" href="../CSS/Modal.css">
+    <style>
+        .Class_1:hover {
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+
+<body id="Bcg">
+
+    <!-- Starting of navbar  -->
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                <div class="container-fluid">
+                    <a href="../HTML/Home.html"><img src="../IMAGES/LOGO-removebg-preview (1).png" width="100px"
+                            height="50px"></a>
+                    <a class="navbar-brand" href="../HTML/Home.html"><span
+                            class="text-warning">SafeCarz</span>Limited</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../HTML/Home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link Class_1" href="../HTML/features.html">Our Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link Class_1" href="../HTML/Our_Services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link Class_1" href="../HTML/Blogs.html">Blogs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link Class_1" href="../HTML/About_Us.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link Class_1" href="../HTML/FAQ'S.html">FAQs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link Class_1" href="../HTML/claim_form.html">Claim</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle Class_1" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Policies
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item Class_1" href="../HTML/car.html">Car</a></li>
+                                    <li><a class="dropdown-item Class_1" href="../HTML/bike.html">Motorbike</a></li>
+                                    <li><a class="dropdown-item Class_1" href="../HTML/three wheeler.html">Three
+                                            Wheeler</a>
+                                    </li>
+                                    <li><a class="dropdown-item Class_1" href="../HTML/scooter.html">Scooter</a></li>
+                                    <li><a class="dropdown-item Class_1" href="../HTML/truck.html">Truck</a></li>
+                                    <li><a class="dropdown-item Class_1" href="../HTML/bicycle.html">Bicycle</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link Class_1" href="../HTML/contact_us.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- End Of Navbar  -->
+
+        <!-- Start of Payment Method  -->
+        <div class="container bg-transparent">
+            <div class="form" action="#"
+                style="background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)), url(../IMAGES/Boost-Your-Car-Insurance.jpg); background-size: cover; background-position: center; background-attachment: fixed; border-style: groove; position: relative; top: 150px;">
+                <div class="row">
+                    <div class="col">
+                        <h3 style="font-style: oblique; font-weight: bolder;font-size: 30px;" class="text-warning">
+                            Billing
+                            Address</h3>
+                        <br>
+
+
+                        <div class="inputBox">
+                            <span>Email:</span>
+                            <input type="text" placeholder="name@gmail.com" id="Email">
+                            <label id="Email_err"></label>
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Full Name:</span>
+                            <input type="text" placeholder="Enter your Name" id="Name">
+                            <label id="name_err"></label>
+                        </div>
+
+                        <div class="inputBox">
+                            <span>Name on Card:</span>
+                            <input type="text" placeholder="Enter Name" id="cn">
+                            <label id="cn_err"></label>
+                        </div>
+
+                        <div class="inputBox">
+                            <span>City:</span>
+                            <input type="text" placeholder="Enter your City Name" id="cy">
+                            <label id="cy_err"></label>
+                        </div>
+
+                        <div class="inputBox">
+                            <span>State:</span>
+                            <input type="text" placeholder="Enter your State Name" id="st">
+                            <label id="st_err"></label>
+                        </div>
+
+                    </div>
+
+                    <div class="col">
+                        <h3 style=" font-style: oblique; font-weight: bolder;font-size: 30px;" class="text-warning">
+                            Payment
+                            Method</h3>
+                        <br>
+
+                        <div class="inputBox">
+                            <span>Credit Card Number:</span>
+                            <input type="number" placeholder="1111-2222-3333-4444" id="ccn">
+                            <label id="ccn_err"></label>
+                        </div>
+                        <div class="inputBox">
+                            <span>Exp Month:</span>
+                            <input type="month" placeholder="Month//" id="mh" required>
+                            <label for="mh_err"></label>
+                        </div>
+
+                        <div class="flex">
+                            <div class="inputBox">
+                                <span>Exp Year:</span>
+                                <input type="number" placeholder="Year//" id="yr"><br>
+                                <label id="yr_err"></label>
+                            </div>
+
+                            <div class="inputBox">
+                                <span>CVV :</span>
+                                <input type="number" placeholder="123" id="cc"><br>
+                                <label id="cc_err"></label>
+                            </div>
+
+                        </div>
+                        <div class="inputBox">
+                            <span>Cards Accepted:</span>
+                            <img src="../IMAGES/card_img (1).png" alt="">
+                        </div>
+                    </div>
+                    <button onclick="CHK()" class="bg-warning">Procees To checkout</button>
+                    <h1 id="h1"></h1>
+                </div>
+            </div>
+            <!-- end of Payment Method  -->
+            
+
+            <script>
+                function CHK() {
+                    var name = document.getElementById('Name').value;
+                    var name_pattern = /^([a-zA-Z]{5,20})$/;
+                    if (name.length == 0) {
+                        if (name.length == 0) {
+                            document.getElementById('name_err').innerHTML = "Name is Required";
+                        }
+                        else {
+                            if (name_pattern.test(name) == true) {
+                                document.getElementById('name_err').innerHTML = "";
+                            }
+                            else {
+                                document.getElementById('name_err').innerHTML = "Name must be in 5-20 Alphabetic Format";
+                            }
+                        }
+                        var email = document.getElementById('Email').value;
+                        var email_pattern = /^([A-Za-z0-9-\_\.])+\@([A-Za-z])+\.([A-Za-z]{2,4})$/;
+
+                        if (email.length == 0) {
+                            document.getElementById('Email_err').innerHTML = "Email is Required";
+                        }
+                        else {
+                            if (email_pattern.test(email) == true) {
+                                document.getElementById('Email_err').innerHTML = "";
+                            }
+                            else {
+                                document.getElementById('Email_err').innerHTML = "Invalid Email";
+                            }
+                        }
+                        var City = document.getElementById('cy').value;
+                        if (City == 0) {
+                            document.getElementById('cy_err').innerHTML = "City name is Required";
+                        }
+                        var card_name = document.getElementById('cn').value;
+                        var card_name_pattern = /^([A-Z]{5,20})$/;
+                        if (card_name.length == 0) {
+                            document.getElementById('cn_err').innerHTML = "Name is Required";
+                        }
+                        else {
+                            if (card_name_pattern.test(card_name) == true) {
+                                document.getElementById('cn_err').innerHTML = "";
+                            }
+                            else {
+                                document.getElementById('cn_err').innerHTML = "Name must be in 5-20 Alphabetic Format";
+                            }
+                        }
+                        var State = document.getElementById('st').value;
+                        if (State == 0) {
+                            document.getElementById('st_err').innerHTML = "State name is Required";
+                        }
+                        var card_number = document.getElementById('ccn').value;
+                        if (card_number == 0) {
+                            document.getElementById('ccn_err').innerHTML = "Credit Card Number is Required";
+                        }
+                        var Year = document.getElementById('yr').value;
+                        if (Year == 0) {
+                            document.getElementById('yr_err').innerHTML = "Year is Required";
+                        }
+                        var ccv = document.getElementById('cc').value;
+                        if (ccv == 0) {
+                            document.getElementById('cc_err').innerHTML = "CCV is Required";
+                        }
+                    }
+
+                    else {
+                            alert(
+                                "You'r order has been placed"
+                            );
+                        }
+                }
+            </script>
+
+
+        </div>
+</body>
+
+</html>
